@@ -1,0 +1,162 @@
+## Pinout 
+This table shows the pin-to-pin instantation of the Xilinx VCU128 banks to the Mezzanine modules through the FMCP connector.
+
+**Table 1 - VCU128 to Mezzanine pinout**
+| Bank ID    | FPGA Host signal name  | Mezzanine signal name |  FMCP Pin   | Description                     | 
+| ---------- | ---------------------- | ----------------------|-------------|---------------------------------|
+| Bank 129   | FMCP_HSPC_DP20_C2M_P   | QSFP1_TX1_P           |  Z8         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP20_C2M_N   | QSFP1_TX1_N           |  Z9         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP20_M2C_P   | QSFP1_RX1_P           |  M14        |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP20_M2C_N   | QSFP1_RX1_N           |  M15        |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP21_C2M_P   | QSFP1_TX2_P           |  Y6         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP21_C2M_N   | QSFP1_TX2_N           |  Y7         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP21_M2C_P   | QSFP1_RX2_P           |  M10        |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP21_M2C_N   | QSFP1_RX2_N           |  M11        |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP22_C2M_P   | QSFP1_TX3_P           |  Z4         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP22_C2M_N   | QSFP1_TX3_N           |  Z5         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP22_M2C_P   | QSFP1_RX3_P           |  M6         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP22_M2C_N   | QSFP1_RX3_N           |  M7         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP23_C2M_P   | QSFP1_TX4_P           |  Y2         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP23_C2M_N   | QSFP1_TX4_N           |  Y3         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP23_M2C_P   | QSFP1_RX4_P           |  M2         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_DP23_M2C_N   | QSFP1_RX4_N           |  M3         |multi-gigabit transceiver data   |
+| Bank 129   | FMCP_HSPC_GBTCLK5_M2C_P| Si2870_CLOCK1_P       |  Z20        |clock signal for transceiver data|
+| Bank 129   | FMCP_HSPC_GBTCLK5_M2C_N| Si2870_CLOCK1_N       |  Z21        |clock signal for transceiver data|
+| Bank 72    | FMCP_HSPC_LA00_CC_P    | QSFP1_REFCLOCK_P      |  G6         |user clock capable (CC) signal   |
+| Bank 72    | FMCP_HSPC_LA00_CC_N    | QSFP1_REFCLOCK_N      |  G7         |user clock capable (CC) signal   |
+| Bank 72    | FMCP_HSPC_LA10_P       | QSFP1_MODSELL_LS      |  C14        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA11_N       | QSFP1_RESETL_LS       |  H17        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA11_P       | QSFP1_MODPRSL_LS      |  H16        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA04_N       | QSFP1_INT_LS          |  H11        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA04_P       | QSFP1_LPMODE_LS       |  H10        |single-ended signal I/O          | 
+| -          | -                      | -                     |  -          | -                               |
+| Bank 128   | FMCP_HSPC_DP16_C2M_P   | QSFP2_TX1_P           |  M26        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP16_C2M_N   | QSFP2_TX1_N           |  M27        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP16_M2C_P   | QSFP2_RX1_P           |  Z32        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP16_M2C_N   | QSFP2_RX1_N           |  Z33        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP17_C2M_P   | QSFP2_TX2_P           |  M30        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP17_C2M_N   | QSFP2_TX2_N           |  M31        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP17_M2C_P   | QSFP2_RX2_P           |  Y34        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP17_M2C_N   | QSFP2_RX2_N           |  Y35        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP18_C2M_P   | QSFP2_TX3_P           |  M34        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP18_C2M_N   | QSFP2_TX3_N           |  M35        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP18_M2C_P   | QSFP2_RX3_P           |  Z36        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP18_M2C_N   | QSFP2_RX3_N           |  Z37        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP19_C2M_P   | QSFP2_TX4_P           |  M38        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP19_C2M_N   | QSFP2_TX4_N           |  M39        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP19_M2C_P   | QSFP2_RX4_P           |  Y38        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_DP19_M2C_N   | QSFP2_RX4_N           |  Y39        |multi-gigabit transceiver data   |
+| Bank 128   | FMCP_HSPC_GBTCLK4_M2C_P| QSFP2_Si570_CLOCK_P   |  L4         |clock signal for transceiver data|
+| Bank 128   | FMCP_HSPC_GBTCLK4_M2C_N| QSFP2_Si570_CLOCK_N   |  L5         |clock signal for transceiver data|
+| Bank 72    | FMCP_HSPC_LA01_CC_P    | QSFP2_REFCLOCK_P      |  D8         |user clock capable (CC) signal   |
+| Bank 72    | FMCP_HSPC_LA01_CC_N    | QSFP2_REFCLOCK_N      |  D9         |user clock capable (CC) signal   |
+| Bank 72    | FMCP_HSPC_LA14_P       | QSFP2_MODSELL_LS      |  C18        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA08_N       | QSFP2_RESETL_LS       |  G13        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA08_P       | QSFP2_MODPRSL_LS      |  G12        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA09_N       | QSFP2_INT_LS          |  D15        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA09_P       | QSFP2_LPMODE_LS       |  D14        |single-ended signal I/O          | 
+| -          | -                      | -                     |  -          | -                               |
+| Bank 127   | FMCP_HSPC_DP12_C2M_P   | QSFP3_TX1_P           |  Z28        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP12_C2M_N   | QSFP3_TX1_N           |  Z29        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP12_M2C_P   | QSFP3_RX1_P           |  Y14        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP12_M2C_N   | QSFP3_RX1_N           |  Y15        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP13_C2M_P   | QSFP3_TX2_P           |  Y30        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP13_C2M_N   | QSFP3_TX2_N           |  Y31        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP13_M2C_P   | QSFP3_RX2_P           |  Z16        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP13_M2C_N   | QSFP3_RX2_N           |  Z17        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP14_C2M_P   | QSFP3_TX3_P           |  M18        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP14_C2M_N   | QSFP3_TX3_N           |  M19        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP14_M2C_P   | QSFP3_RX3_P           |  Y18        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP14_M2C_N   | QSFP3_RX3_N           |  Y19        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP15_C2M_P   | QSFP3_TX4_P           |  M22        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP15_C2M_N   | QSFP3_TX4_N           |  M23        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP15_M2C_P   | QSFP3_RX4_P           |  Y22        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_DP15_M2C_N   | QSFP3_RX4_N           |  Y23        |multi-gigabit transceiver data   |
+| Bank 127   | FMCP_HSPC_GBTCLK3_M2C_P| QSFP3_Si570_CLOCK_P   |  L8         |Clock signal for transceiver data|
+| Bank 127   | FMCP_HSPC_GBTCLK3_M2C_N| QSFP3_Si570_CLOCK_N   |  L9         |Clock signal for transceiver data|
+| Bank 71    | FMCP_HSPC_LA17_CC_P    | QSFP3_REFCLOCK_P      |  D20        |user clock capable (CC) signal   |
+| Bank 71    | FMCP_HSPC_LA17_CC_N    | QSFP3_REFCLOCK_N      |  D21        |user clock capable (CC) signal   |
+| Bank 72    | FMCP_HSPC_LA06_P       | QSFP3_MODSELL_LS      |  C10        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA05_N       | QSFP3_RESETL_LS       |  D12        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA05_P       | QSFP3_MODPRSL_LS      |  D11        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA12_N       | QSFP3_INT_LS          |  G16        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA12_P       | QSFP3_LPMODE_LS       |  G15        |single-ended signal I/O          |
+| -          | -                      | -                     |  -          | -                               |
+| Bank 126   | FMCP_HSPC_DP8_C2M_P    | QSFP4_TX1_P           |  B28        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP8_C2M_N    | QSFP4_TX1_N           |  B29        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP8_M2C_P    | QSFP4_RX1_P           |  B8         |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP8_M2C_N    | QSFP4_RX1_N           |  B9         |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP9_C2M_P    | QSFP4_TX2_P           |  B24        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP9_C2M_N    | QSFP4_TX2_N           |  B25        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP9_M2C_P    | QSFP4_RX2_P           |  B4         |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP9_M2C_N    | QSFP4_RX2_N           |  B5         |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP10_C2M_P   | QSFP4_TX3_P           |  Z24        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP10_C2M_N   | QSFP4_TX3_N           |  Z25        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP10_M2C_P   | QSFP4_RX3_P           |  Y10        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP10_M2C_N   | QSFP4_RX3_N           |  Y11        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP11_C2M_P   | QSFP4_TX4_P           |  Y26        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP11_C2M_N   | QSFP4_TX4_N           |  Y27        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP11_M2C_P   | QSFP4_RX4_P           |  Z12        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_DP11_M2C_N   | QSFP4_RX4_N           |  Z13        |multi-gigabit transceiver data   |
+| Bank 126   | FMCP_HSPC_GBTCLK2_M2C_P| QSFP4_Si570_CLOCK_P   |  L12        |Clock signal for transceiver data|
+| Bank 126   | FMCP_HSPC_GBTCLK2_M2C_N| QSFP4_Si570_CLOCK_N   |  L13        |Clock signal for transceiver data|
+| Bank 71    | FMCP_HSPC_LA18_CC_P    | QSFP4_REFCLOCK_P      |  C22        |user clock capable (CC) signal   |
+| Bank 71    | FMCP_HSPC_LA18_CC_N    | QSFP4_REFCLOCK_N      |  C23        |user clock capable (CC) signal   |
+| Bank 72    | FMCP_HSPC_LA15_P       | QSFP4_MODSELL_LS      |  H19        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA07_N       | QSFP4_RESETL_LS       |  H14        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA07_P       | QSFP4_MODPRSL_LS      |  H13        |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA02_N       | QSFP4_INT_LS          |  H8         |single-ended signal I/O          | 
+| Bank 72    | FMCP_HSPC_LA02_P       | QSFP4_LPMODE_LS       |  H7         |single-ended signal I/O          | 
+| -          | -                      | -                     |  -          | -                               |
+| Bank 125   | FMCP_HSPC_DP4_C2M_P    | QSFP5_TX1_P           |  A34        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP4_C2M_N    | QSFP5_TX1_N           |  A35        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP4_M2C_P    | QSFP5_RX1_P           |  A14        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP4_M2C_N    | QSFP5_RX1_N           |  A15        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP5_C2M_P    | QSFP5_TX2_P           |  A38        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP5_C2M_N    | QSFP5_TX2_N           |  A39        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP5_M2C_P    | QSFP5_RX2_P           |  A18        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP5_M2C_N    | QSFP5_RX2_N           |  A19        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP6_C2M_P    | QSFP5_TX3_P           |  B36        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP6_C2M_N    | QSFP5_TX3_N           |  B37        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP6_M2C_P    | QSFP5_RX3_P           |  B16        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP6_M2C_N    | QSFP5_RX3_N           |  B17        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP7_C2M_P    | QSFP5_TX4_P           |  B32        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP7_C2M_N    | QSFP5_TX4_N           |  B33        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP7_M2C_P    | QSFP5_RX4_P           |  B12        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_DP7_M2C_N    | QSFP5_RX4_N           |  B13        |multi-gigabit transceiver data   |
+| Bank 125   | FMCP_HSPC_GBTCLK1_M2C_P| Si5328_CLOCK2_P       |  B20        |Clock signal for transceiver data|
+| Bank 125   | FMCP_HSPC_GBTCLK1_M2C_N| Si5328_CLCOK2_N       |  B21        |Clock signal for transceiver data|
+| Bank 71    | FMCP_HSPC_LA20_P       | QSFP5_MODSELL_LS      |  G21        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA19_N       | QSFP5_RESETL_LS       |  H23        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA19_P       | QSFP5_MODPRSL_LS      |  H22        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA23_N       | QSFP5_INT_LS          |  D24        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA23_P       | QSFP5_LPMODE_LS       |  D23        |single-ended signal I/O          |
+| -          | -                      | -                     |  -          | -                               |
+| Bank 124   | FMCP_HSPC_DP0_C2M_P    | QSFP6_TX1_P           |  C2         |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP0_C2M_N    | QSFP6_TX1_N           |  C3         |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP0_M2C_P    | QSFP6_RX1_P           |  C6         |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP0_M2C_N    | QSFP6_RX1_N           |  C7         |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP1_C2M_P    | QSFP6_TX2_P           |  A22        |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP1_C2M_N    | QSFP6_TX2_N           |  A23        |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP1_M2C_P    | QSFP6_RX2_P           |  A2         |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP1_M2C_N    | QSFP6_RX2_N           |  A3         |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP2_C2M_P    | QSFP6_TX3_P           |  A26        |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP2_C2M_N    | QSFP6_TX3_N           |  A27        |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP2_M2C_P    | QSFP6_RX3_P           |  A6         |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP2_M2C_N    | QSFP6_RX3_N           |  A7         |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP3_C2M_P    | QSFP6_TX4_P           |  A30        |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP3_C2M_N    | QSFP6_TX4_N           |  A31        |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP3_M2C_P    | QSFP6_RX4_P           |  A10        |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_DP3_M2C_N    | QSFP6_RX4_N           |  A11        |multi-gigabit transceiver data   |
+| Bank 124   | FMCP_HSPC_GBTCLK0_M2C_P| Si5328_CLOCK_P        |  D4         |Clock signal for transceiver data|
+| Bank 124   | FMCP_HSPC_GBTCLK0_M2C_N| Si5328_CLCOK_N        |  D5         |Clock signal for transceiver data|
+| Bank 71    | FMCP_HSPC_LA24_P       | QSFP6_MODSELL_LS      |  H28        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA25_N       | QSFP6_RESETL_LS       |  G28        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA25_P       | QSFP6_MODPRSL_LS      |  G27        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA26_N       | QSFP6_INT_LS          |  D27        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA26_P       | QSFP6_LPMODE_LS       |  D26        |single-ended signal I/O          | 
+| -          | -                      | -                     |  -          | -                               |
+| Bank 71    | FMCP_HSPC_LA29_N       | Si5328_INT_ALM_LS1    |  G31        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA29_P       | Si5328_RST_B_LS       |  G30        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA32_N       | Si5328_INT_ALM_LS2    |  H38        |single-ended signal I/O          | 
+| Bank 71    | FMCP_HSPC_LA32_P       | HSPC_IIC_RESET        |  H37        |single-ended signal I/O          | 
