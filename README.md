@@ -12,7 +12,7 @@ Date (Last) Edited: 15 August 2023
 
 This is the main repository of the QSFP28 Mezzanine card used for high speed communication.   
 The schematic and layout document can be found [here](./[v01]/QSFP28_Mezzanine.pdf). 
-The PCB design is available by request and the manufacturer information is coming soon...
+
 ## Specifications
 
 This Mezzanine is designed to work with any FPGA carrier board compatible with ANSI/VITA 57.4 FPGA Mezzanine Card Plus (FMCP).                                                                                                                 
